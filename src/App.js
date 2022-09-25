@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useLayoutEffect } from "react";
+
+import { Routes, Route, useLocation } from "react-router-dom";
+
+import AboutLayout from "./routes/AboutLayout";
+import HomeLayout from "./routes/HomeLayout";
+import ProductsLayout from "./routes/ProductsLayout";
+import CartLayout from "./routes/CartLayout";
+import ProductItemLayout from "./routes/ProductItemLayout";
+import SharedLayout from "./routes/SharedLayout";
+import Error from "./pages/Error";
 
 function App() {
+  const Wrapper = ({ children }) => {
+    const location = useLocation();
+    useLayoutEffect(() => {
+      document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
+    return children;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<HomeLayout />} />
+          <Route path="/about" element={<AboutLayout />} />
+          <Route path="/products" element={<ProductsLayout />} />
+          <Route path="/products/:id" element={<ProductItemLayout />} />
+          <Route path="/cart" element={<CartLayout />} />
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
+    </Wrapper>
   );
 }
 
