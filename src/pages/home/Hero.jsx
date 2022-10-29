@@ -8,7 +8,7 @@ const Hero = () => {
     <main className="bg-bgcolor2 w-full min-h-screen">
       <div className="container mx-auto py-6 px-6 lg:px-16">
         {/* grid container */}
-        <div className="grid lg:grid-cols-2 mt-20 lg:mt-32">
+        <div className="grid place-items-center lg:grid-cols-2 mt-20 lg:mt-52">
           {/* 1 div */}
           <div className="space-y-6 lg:space-y-14 text-center lg:text-left w-full">
             <h1 className="text-primary font-urbanist font-bold text-4xl md:text-5xl lg:text-6xl">
