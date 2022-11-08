@@ -9,6 +9,7 @@ import CartLayout from "./routes/CartLayout";
 import ProductItemLayout from "./routes/ProductItemLayout";
 import SharedLayout from "./routes/SharedLayout";
 import Error from "./pages/Error";
+import GoodContextProvider from "./contexts/GoodContext";
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -21,16 +22,18 @@ function App() {
 
   return (
     <Wrapper>
-      <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route index element={<HomeLayout />} />
-          <Route path="/about" element={<AboutLayout />} />
-          <Route path="/products" element={<ProductsLayout />} />
-          <Route path="/products/:id" element={<ProductItemLayout />} />
-          <Route path="/cart" element={<CartLayout />} />
-          <Route path="*" element={<Error />} />
-        </Route>
-      </Routes>
+      <GoodContextProvider>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<HomeLayout />} />
+            <Route path="/about" element={<AboutLayout />} />
+            <Route path="/products" element={<ProductsLayout />} />
+            <Route path="/products/:id" element={<ProductItemLayout />} />
+            <Route path="/cart" element={<CartLayout />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
+      </GoodContextProvider>
     </Wrapper>
   );
 }

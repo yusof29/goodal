@@ -30,11 +30,11 @@ const Products = () => {
 
   return (
     <main className="bg-[#FFFFFF] w-full min-h-screen">
-      <div className="container mx-auto p-6 px-6 lg:px-16 md:pb-32 space-y-8 md:space-y-32">
+      <div className="container mx-auto py-6 px-6 lg:px-16 md:pb-32 space-y-8 md:space-y-32">
         {/* header div */}
 
         {showBanner ? (
-          <div className="mt-8 relative flex justify-end items-center">
+          <div className="mt-20 relative flex justify-end items-center">
             <h1 className="text-primary font-urbanist font-bold text-lg sm:text-3xl md:text-4xl lg:text-5xl absolute uppercase mr-3 sm:mr-5 md:mr-6 lg:mr-20">
               All Product
             </h1>
@@ -64,7 +64,7 @@ const Products = () => {
                   setProduct(productDataTest);
                   setshowBanner(false);
                 }}
-                className="py-3 px-5 rounded-lg hover:bg-[#535144] hover:text-bgcolor2 transition ease-in-out duration-300"
+                className="py-3 px-5 rounded-lg hover:bg-[#535144] hover:text-bgcolor2 transition ease-in-out duration-300 cursor-pointer"
               >
                 All
               </li>
@@ -74,7 +74,7 @@ const Products = () => {
                   filterType("tangerine");
                   setshowBanner(false);
                 }}
-                className="py-3 px-5 rounded-lg hover:bg-[#F0E638] hover:text-bgcolor2 transition ease-in-out duration-300"
+                className="py-3 px-5 rounded-lg hover:bg-[#F0E638] hover:text-bgcolor2 transition ease-in-out duration-300 cursor-pointer"
               >
                 Green Tangerine
               </li>
@@ -84,7 +84,7 @@ const Products = () => {
                   filterType("apple");
                   setshowBanner(false);
                 }}
-                className="py-3 px-5 rounded-lg hover:bg-[#E8545C] hover:text-bgcolor2 transition ease-in-out duration-300"
+                className="py-3 px-5 rounded-lg hover:bg-[#E8545C] hover:text-bgcolor2 transition ease-in-out duration-300 cursor-pointer"
               >
                 Apple Aha
               </li>
@@ -94,7 +94,7 @@ const Products = () => {
                   filterType("leaf");
                   setshowBanner(false);
                 }}
-                className="py-3 px-5 rounded-lg hover:bg-[#C3AC1B] hover:text-[#FFFFFF] transition ease-in-out duration-300"
+                className="py-3 px-5 rounded-lg hover:bg-[#C3AC1B] hover:text-[#FFFFFF] transition ease-in-out duration-300 cursor-pointer"
               >
                 Heart Leaf
               </li>

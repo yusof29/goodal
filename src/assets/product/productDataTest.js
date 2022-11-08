@@ -14,24 +14,24 @@ export const productDataTest = [
         image2: tangerineData.tangerine1_hover,
         description: [
           {
-            span: "test",
-            p: "test",
+            span: "IMPROVE SKIN IMPURITIES AND BRIGHTNESS IN 2 WEEKS:",
+            p: "Our Vita C Dark Spot Serum targets impurities (dark spots, blemishes, wrinkles, fine lines, uneven skin tone, dullness) and prevents signs of aging in as little as 2 weeks. Its advanced formula corrects the innermost layers of the skin even before the hidden impurities surface.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "NOTICEABLE RESULTS:",
+            p: "Based on a consumer panel test of users with a variety of skin types, in just 2 weeks, 95% of users felt their skin was brighter and clearer.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "10x MORE VITAMIN C IN OUR SERUM:",
+            p: "Our Vita C Dark Spot Serum+ contains 70% of green tangerine extract full of vitamin C derivatives. Green tangerines contain up to 10x more vitamin C than their mature counterparts, and we’ve captured every drop into our serum.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "ADVANCED FORMULATION FOR SENSITIVE SKIN:",
+            p: "Contrary to popular belief that vitamin C products can be harsh on your skin, our serum is made of advanced formulation that uses vitamin C derivatives instead of pure vitamin C.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "BETTER TOGETHER:",
+            p: "See enhanced results by pairing up with other products in our Vita C line.",
           },
         ],
       },
@@ -43,24 +43,24 @@ export const productDataTest = [
         image2: tangerineData.tangerine2_hover,
         description: [
           {
-            span: "test",
-            p: "test",
+            span: "UPGRADE YOUR TONING GAME - FASTER & EASIER:",
+            p: "Getting that extra glow on your skin has never been easier. Replace your toner with our ‘5-in-1’ toner pad. All it takes is one quick swipe to exfoliate, moisturize, brighten, tone, and clarify.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "BOOSTED BRIGHTNESS WITH 10x MORE VITAMIN C:",
+            p: "These pads come fully soaked in toner that is richly packed with vitamin C. Powerful antioxidants from green tangerines help restore the look of brighter and youthful skin. The green tangerines from Jeju Island contain up to 10x more vitamin C than their mature counterparts, giving you the best results for a clearer complexion.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "SAFE FORMULA FOR GENTLE EXFOLIATION:",
+            p: "We do not use chemical exfoliants (AHA and BHA) that are harsh on your skin. Our Vita C Toner Pad offers the safest formula by only using natural acids derived from real fruits (lemon, bilberry, sugar cane, bergamot, orange, etc). Our pads are certified as non-irritating and gentle enough for both AM and PM.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "DEEP HYDRATION FROM HYALURONIC ACID:",
+            p: "Hyaluronic acid with low molecular weight allows it to sink deeper into the skin than those with high molecular weight. This enables the hyaluronic acids to lock in the moisture your skin needs.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "BETTER TOGETHER:",
+            p: "See enhanced results by pairing up with other products in our Vita C line.",
           },
         ],
       },
@@ -72,24 +72,24 @@ export const productDataTest = [
         image2: tangerineData.tangerine3_hover,
         description: [
           {
-            span: "test",
-            p: "test",
+            span: "WITNESS INSTANT BRIGHTENING AND HYDRATION:",
+            p: "Our Vita C Dark Spot Serum Sheet Masks are infused with our Vita C Dark Spot Serum. Let your skin soak in the anti-aging antioxidants from green tangerines (they contain 10x more vitamin C than their mature counterparts) and see the transformation into a brighter and clearer complexion.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "ONE WHOLE BOTTLE OF SERUM IN EACH SHEET MASK:",
+            p: "Each sheet mask contains the same amount of ingredients as one whole bottle of our Vita C Dark Spot Serum. See the same results as our serum, but faster! Our sheet masks target impurities (dark spots, blemishes, wrinkles, fine lines, uneven skin tone, dullness) and provide deep hydration.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "EVERY DROP COUNTS WITH OUR TENCEL FIBER SHEET MASKS:",
+            p: "Our Active-Up sheet masks are weaved with Tencel (lyocell) fibers. Our technology allows the sheet masks to transfer every drop of serum from the sleeve to your face. The thin, flexible sheet masks create a custom fit for your face. 100% natural. Non-irritating. Environmental-friendly.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "FREE OF 20 HARMFUL INGREDIENTS:",
+            p: "We value the cleanliness of our products, so we do not use toxic ingredients, such as mineral oils, parabens, synthetic fragrances, and more. Our cream is certified as non-irritating, which means it’s kind even to sensitive skin.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "BETTER TOGETHER:",
+            p: "See enhanced results by pairing up with other products in our Vita C line.",
           },
         ],
       },
@@ -198,24 +198,24 @@ export const productDataTest = [
         image2: leafData.leaf1_hover,
         description: [
           {
-            span: "test",
-            p: "test",
+            span: "REGAIN A HEALTHY BALANCE IN YOUR SKIN:",
+            p: "Our Houttuynia Cordata Calming Essence hydrates, heals, soothes and reduces irritation from your damaged skin. The balance in our skin is broken due to the stresses of our modern life. Our essence helps you regain the balance you’ve once lost by healing the inner layers of the skin structure.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "UNLOCKING THE SECRET INGREDIENT FROM JEJU ISLAND:",
+            p: "One bottle of essence holds 97.5% of houttuynia cordata extract. This herb has anti-inflammatory and antioxidant properties. It is harvested during April - June, where the level of quercetin in the herb is at its highest levels. Quercitrin is known to improve damages from UV rays.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "PROVEN POWERS OF HEALING BENEFITS:",
+            p: "Based on a Wound Healing Assay Test, our essence showed powerful results. With just 10% of the houttuynia cordata extract applied to skin damages, the results showed a 98.6% increase in healing in the tested areas. Not only does our essence heal, it also strengthens the protective barrier of your skin to prevent future damages.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "COOLING AND SOOTHING EFFECTS:",
+            p: "Houttuynia Cordata Calming Essence is clinically proven to soothe your skin by lowering the overall skin temperature that has been affected by UV rays. Our gentle formula also provides the perfect pH balance for your skin.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "BETTER TOGETHER:",
+            p: "See enhanced results by pairing up with other products in our Houttuynia Cordata line.",
           },
         ],
       },
@@ -227,56 +227,27 @@ export const productDataTest = [
         image2: leafData.leaf2_hover,
         description: [
           {
-            span: "test",
-            p: "test",
+            span: "REGAIN A HEALTHY BALANCE IN YOUR SKIN:",
+            p: "Our Houttuynia Cordata Calming Cream hydrates, heals, soothes and reduces irritation from your damaged skin. The balance in our skin is broken due to the stresses of our modern life. Our essence helps you regain the balance you’ve once lost by healing the inner layers of the skin structure",
           },
           {
-            span: "test",
-            p: "test",
+            span: "UNLOCKING THE SECRET INGREDIENT FROM JEJU ISLAND:",
+            p: "Our cream holds 60% of houttuynia cordata extract. This herb has anti-inflammatory and antioxidant. It is harvested during April - June, where the level of quercetin in the herb is at its highest levels. Quercitrin is known to improve damages from UV rays.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "HERBAL HYDRATION:",
+            p: "With the help of herbal remedy, our Houttuynia Cordata Calming Moisture Cream is a daily gel-type moisturizer that boosts hydration with a cooling finish.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "POWERFUL RECOVERY:",
+            p: "Our moisturizing cream is infused with madecassoside that boosts the repairment of damaged skin and soothes irritations.",
           },
           {
-            span: "test",
-            p: "test",
+            span: "BETTER TOGETHER:",
+            p: "See enhanced results by pairing up with other products in our Houttuynia Cordata line.",
           },
         ],
       },
-      // {
-      //   id: 3,
-      //   name: "Calming Essence",
-      //   price: "$17.00",
-      //   image: leafData.leaf3,
-      //   image2: leafData.leaf3_hover,
-      //   description: [
-      //     {
-      //       span: "test",
-      //       p: "test",
-      //     },
-      //     {
-      //       span: "test",
-      //       p: "test",
-      //     },
-      //     {
-      //       span: "test",
-      //       p: "test",
-      //     },
-      //     {
-      //       span: "test",
-      //       p: "test",
-      //     },
-      //     {
-      //       span: "test",
-      //       p: "test",
-      //     },
-      //   ],
-      // },
     ],
   },
 ];
