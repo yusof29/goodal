@@ -6,4 +6,4 @@
 E-commerce app
 ```
 
-![Goodal](https://github.com/yusof29/goodal/blob/0acf525ed6dae7bf94e6516cfa05c620aa04a11d/src/assets/readme/goodal.png "Goodal")
+![Goodal](https://github.com/yusof29/goodal/blob/ef54525ccace887569fbacb361f6dd870a1bf761/src/assets/readme/goodal.png "Goodal")
