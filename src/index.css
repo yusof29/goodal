@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   outline: red solid 1px;
-}
+} */
 
 /* body {
   overflow-y: hidden;
