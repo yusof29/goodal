@@ -2,14 +2,15 @@ import { useLayoutEffect } from "react";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import AboutLayout from "./routes/AboutLayout";
-import HomeLayout from "./routes/HomeLayout";
-import ProductsLayout from "./routes/ProductsLayout";
-import CartLayout from "./routes/CartLayout";
-import ProductItemLayout from "./routes/ProductItemLayout";
-import SharedLayout from "./routes/SharedLayout";
-import Error from "./pages/Error";
-import GoodContextProvider from "./contexts/GoodContext";
+import {
+  SharedLayout,
+  HomeLayout,
+  AboutLayout,
+  ProductsLayout,
+  ProductItemLayout,
+  // CartLayout,
+  Error,
+} from "./routes";
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -22,18 +23,16 @@ function App() {
 
   return (
     <Wrapper>
-      <GoodContextProvider>
-        <Routes>
-          <Route path="/" element={<SharedLayout />}>
-            <Route index element={<HomeLayout />} />
-            <Route path="/about" element={<AboutLayout />} />
-            <Route path="/products" element={<ProductsLayout />} />
-            <Route path="/products/:id" element={<ProductItemLayout />} />
-            <Route path="/cart" element={<CartLayout />} />
-            <Route path="*" element={<Error />} />
-          </Route>
-        </Routes>
-      </GoodContextProvider>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<HomeLayout />} />
+          <Route path="/about" element={<AboutLayout />} />
+          <Route path="/products" element={<ProductsLayout />} />
+          <Route path="/products/:id" element={<ProductItemLayout />} />
+          {/* <Route path="/cart" element={<CartLayout />} /> */}
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
     </Wrapper>
   );
 }

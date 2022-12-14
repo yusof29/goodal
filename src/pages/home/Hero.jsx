@@ -1,22 +1,28 @@
-import React, { useContext, useEffect } from "react";
-import { GoodContext } from "../../contexts/GoodContext";
+import React, { useEffect } from "react";
 
 import Button from "../../components/Button";
-import { slider } from "../../assets/herobanner/sllider";
+import { slider } from "../../assets/herobanner/slider";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import { GoPrimitiveDot } from "react-icons/go";
 
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setCurrImg } from "../../features/slider/sliderSlice";
 
 const Hero = () => {
-  const { currImg, setCurrImg } = useContext(GoodContext);
+  const dispatch = useDispatch();
+  const { currImg } = useSelector((store) => store.slider);
 
   const slideRight = () => {
-    currImg < slider.length - 1 ? setCurrImg(currImg + 1) : setCurrImg(0);
+    currImg < slider.length - 1
+      ? dispatch(setCurrImg({ currImg: currImg + 1 }))
+      : dispatch(setCurrImg({ currImg: 0 }));
   };
 
   const slideLeft = () => {
-    currImg > 0 ? setCurrImg(currImg - 1) : setCurrImg(slider.length - 1);
+    currImg > 0
+      ? dispatch(setCurrImg({ currImg: currImg - 1 }))
+      : dispatch(setCurrImg({ currImg: slider.length - 1 }));
   };
 
   useEffect(() => {
@@ -52,8 +58,8 @@ const Hero = () => {
                 <div
                   onClick={() =>
                     currImg > 0
-                      ? setCurrImg(currImg - 1)
-                      : setCurrImg(slider.length - 1)
+                      ? dispatch(setCurrImg({ currImg: currImg - 1 }))
+                      : dispatch(setCurrImg({ currImg: slider.length - 1 }))
                   }
                 >
                   <AiOutlineArrowLeft className="w-7 h-7 bg-zinc-900/40 rounded-full p-1 text-white/80 hover:scale-105 hover:bg-zinc-900/60 transition ease-in duration-300 cursor-pointer" />
@@ -68,7 +74,9 @@ const Hero = () => {
                           ? "text-primary/70 hover:scale-125 transition ease-in duration-300 cursor-pointer"
                           : "text-secondary/40 hover:scale-125 transition ease-in duration-300 cursor-pointer"
                       }
-                      onClick={() => setCurrImg(slide.id)}
+                      onClick={() =>
+                        dispatch(setCurrImg({ currImg: slide.id }))
+                      }
                       size={25}
                     />
                   ))}
@@ -77,8 +85,8 @@ const Hero = () => {
                 <div
                   onClick={() =>
                     currImg < slider.length - 1
-                      ? setCurrImg(currImg + 1)
-                      : setCurrImg(0)
+                      ? dispatch(setCurrImg({ currImg: currImg + 1 }))
+                      : dispatch(setCurrImg({ currImg: 0 }))
                   }
                 >
                   <AiOutlineArrowRight className="w-7 h-7 bg-zinc-900/40 rounded-full p-1 text-white/80 hover:scale-105 hover:bg-zinc-900/60 transition ease-in duration-300 cursor-pointer" />
@@ -131,7 +139,7 @@ const Hero = () => {
                         ? "text-primary/70 hover:scale-125 transition ease-in duration-300 cursor-pointer"
                         : "text-secondary/40 hover:scale-125 transition ease-in duration-300 cursor-pointer"
                     }
-                    onClick={() => setCurrImg(slide.id)}
+                    onClick={() => dispatch(setCurrImg({ currImg: slide.id }))}
                     size={25}
                   />
                 ))}

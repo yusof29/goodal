@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 
-import { Link } from "react-router-dom";
-
 import { bannerData } from "../../assets/product/bannerData";
 import { productDataTest } from "../../assets/product/productDataTest";
 
 import all_banner from "../../assets/product/all_banner.jpg";
 import ProductBanner from "./ProductBanner";
+import ProductGrid from "./ProductGrid";
 
 const Products = () => {
   const [product, setProduct] = useState(productDataTest);
   const [banner, setBanner] = useState(bannerData);
-
   const [showBanner, setshowBanner] = useState(true);
 
   //  filter type (implicit way)
@@ -127,37 +125,9 @@ const Products = () => {
             {/* products grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-9 px-3">
               {product.map((item) =>
-                item.allproduct.map((prod) => {
-                  return (
-                    <Link
-                      to={`/products/${prod.id}`}
-                      key={prod.id}
-                      state={{ prod }}
-                    >
-                      <div className="text-center space-y-3">
-                        <div className="group h-52 md:h-64 relative flex justify-center">
-                          <img
-                            className="h-52 md:h-64 absolute object-cover group-hover:opacity-0 transition ease-in-out duration-500"
-                            src={prod.image}
-                            alt={prod.name}
-                          />
-
-                          <img
-                            className="h-52 md:h-64 absolute object-cover opacity-0 group-hover:opacity-100 transition ease-in-out duration-500 rounded-lg shadow-xl"
-                            src={prod.image2}
-                            alt={prod.name}
-                          />
-                        </div>
-                        <p className="text-secondary font-urbanist text-base md:text-lg lg:text-xl">
-                          {prod.name}
-                        </p>
-                        <span className="text-secondary font-urbanist font-bold text-base md:text-lg lg:text-xl inline-block">
-                          {prod.price}
-                        </span>
-                      </div>
-                    </Link>
-                  );
-                })
+                item.allproduct.map((prod, i) => (
+                  <ProductGrid prod={prod} {...prod} key={i} />
+                ))
               )}
             </div>
           </div>

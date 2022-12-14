@@ -7,9 +7,10 @@ export const productDataTest = [
     category: "tangerine",
     allproduct: [
       {
-        id: 1,
+        id: "t1",
         name: "Vitamin C Serum",
-        price: "$24.00",
+        type: "Green Tangerine",
+        price: "24.00",
         image: tangerineData.tangerine1,
         image2: tangerineData.tangerine1_hover,
         description: [
@@ -36,9 +37,10 @@ export const productDataTest = [
         ],
       },
       {
-        id: 2,
+        id: "t2",
         name: "Vitamin C Toner Pads",
-        price: "$24.00",
+        type: "Green Tangerine",
+        price: "24.00",
         image: tangerineData.tangerine2,
         image2: tangerineData.tangerine2_hover,
         description: [
@@ -65,9 +67,10 @@ export const productDataTest = [
         ],
       },
       {
-        id: 3,
+        id: "t3",
         name: "Vitamin C Serum Sheet Mask",
-        price: "$15.00",
+        type: "Green Tangerine",
+        price: "15.00",
         image: tangerineData.tangerine3,
         image2: tangerineData.tangerine3_hover,
         description: [
@@ -99,9 +102,10 @@ export const productDataTest = [
     category: "apple",
     allproduct: [
       {
-        id: 1,
+        id: "a1",
         name: "Clearing Toner Pads",
-        price: "$20.00",
+        type: "Apple Aha",
+        price: "20.00",
         image: appleData.apple1,
         image2: appleData.apple1_hover,
         description: [
@@ -128,9 +132,10 @@ export const productDataTest = [
         ],
       },
       {
-        id: 2,
+        id: "a2",
         name: "Clearing Ampoule",
-        price: "$22.00",
+        type: "Apple Aha",
+        price: "22.00",
         image: appleData.apple2,
         image2: appleData.apple2_hover,
         description: [
@@ -157,9 +162,10 @@ export const productDataTest = [
         ],
       },
       {
-        id: 3,
+        id: "a3",
         name: "Clearing Toner",
-        price: "$18.00",
+        type: "Apple Aha",
+        price: "18.00",
         image: appleData.apple3,
         image2: appleData.apple3_hover,
         description: [
@@ -191,9 +197,10 @@ export const productDataTest = [
     category: "leaf",
     allproduct: [
       {
-        id: 1,
+        id: "l1",
         name: "Calming Essence",
-        price: "$30.00",
+        type: "Heart Leaf",
+        price: "30.00",
         image: leafData.leaf1,
         image2: leafData.leaf1_hover,
         description: [
@@ -220,9 +227,10 @@ export const productDataTest = [
         ],
       },
       {
-        id: 2,
+        id: "l2",
         name: "Calming Cream",
-        price: "$24.00",
+        type: "Heart Leaf",
+        price: "24.00",
         image: leafData.leaf2,
         image2: leafData.leaf2_hover,
         description: [

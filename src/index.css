@@ -4,8 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
+* {
   outline: red solid 1px;
+}
+
+/* body {
+  overflow-y: hidden;
+} */
+
+/* .no-scrollbar::-webkit-scrollbar {
+  display: none;
+} */
+
+/* ::-webkit-scrollbar {
+  display: none;
 } */
 
 @layer components {
